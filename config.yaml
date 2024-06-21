@@ -1,0 +1,12 @@
+general:
+  path_to_test_data: 'data/test_data.json'
+  path_to_training_data: 'data/training_data.json'
+
+llm:
+  ANTHROPIC_API_KEY: ""
+  OPENAI_API_KEY: ""
+  GROQ_API_KEY: ""
+
+embeddings_classifier:
+  COHERE_API_KEY: ""
+  cohere_embeddings_model: embed-multilingual-v3.0

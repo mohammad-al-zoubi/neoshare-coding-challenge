@@ -1,10 +1,3 @@
-# TODO:
-#  1. Convert data to json, add ids & split data
-#  2. Generate embeddings
-#  3. Train embeddings classifier
-#  4. Evaluate embeddings classifier
-#  5. Write inference code
-#  6. Prepare presentation
 import json
 import random
 

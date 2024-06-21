@@ -38,4 +38,4 @@ Output:
 Class: 7
 ```
 
-Note: In this solution the embeddings which are used by the linear classifier are generated via the API. Hence, for the linear classifier prediction a valid API key for Cohere is required. These need to be set in config.yaml.
+Note: In this solution the embeddings which are used by the linear classifier are generated via the API. Hence, for the linear classifier prediction a valid API key for Cohere is required. This needs to be set in config.yaml.

@@ -44,8 +44,12 @@ def main():
         print(f"Error reading file: {e}")
         sys.exit(1)
 
-    embeddings = cohere_embeddings([text])
-    classification = classify_text(embeddings[0])
+    try:
+        embeddings = cohere_embeddings([text])
+        classification = classify_text(embeddings[0])
+    except Exception as e:
+        print(f"Error classifying text: {e}")
+        sys.exit(1)
 
     print(f"The classified label for the document is: {classification}")
 

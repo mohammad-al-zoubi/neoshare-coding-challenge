@@ -19,7 +19,7 @@ def validate_file(filepath):
     if os.path.getsize(filepath) > 5 * 1024 * 1024:
         raise ValueError("File is too large (limit: 5MB)")
 
-    # Check path length (limit to 255 characters)
+    # Check path length (limit to 512 characters)
     if len(filepath) > 512:
         raise ValueError("File path is too long (limit: 255 characters)")
 

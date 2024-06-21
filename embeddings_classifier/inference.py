@@ -11,6 +11,7 @@ model.eval()  # Set the model to evaluation mode
 
 
 def classify_text(embeddings):
+    """Classify the text using the trained model."""
     with torch.no_grad():
         inputs = torch.tensor(embeddings, dtype=torch.float32).unsqueeze(0)
         outputs = model(inputs)
@@ -19,6 +20,7 @@ def classify_text(embeddings):
 
 
 def evaluate_validation_set():
+    """Evaluate the test set using the trained model."""
     from utils import load_json_to_dict
     from tqdm import tqdm
     data = load_json_to_dict('data/embeddings_test.json')

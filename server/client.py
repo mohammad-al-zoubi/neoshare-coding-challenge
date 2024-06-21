@@ -2,6 +2,7 @@ import requests
 
 
 def call_predict_endpoint(text, mode='linear', host='localhost', port=8000):
+    """Call the predict endpoint of the FastAPI server."""
     url = f"http://{host}:{port}/predict/"
     params = {'text': text, 'mode': mode}
     response = requests.get(url, params=params)

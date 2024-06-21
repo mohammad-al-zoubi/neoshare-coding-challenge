@@ -27,6 +27,7 @@ class LinearClassifier(nn.Module):
 
 
 class TextDataset(Dataset):
+    """Dataset class for the text data."""
     def __init__(self, path_to_data):
         self.data = load_json_to_dict(path_to_data)
 

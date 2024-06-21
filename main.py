@@ -28,8 +28,8 @@ def validate_file(filepath):
 
     # Check path length (limit to 512 characters)
     if len(filepath) > 512:
-        log.error("File path is too long (limit: 255 characters)")
-        raise ValueError("File path is too long (limit: 255 characters)")
+        log.error("File path is too long (limit: 512 characters)")
+        raise ValueError("File path is too long (limit: 512 characters)")
 
 
 def main():
